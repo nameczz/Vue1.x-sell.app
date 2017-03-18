@@ -67,7 +67,6 @@
 					</li>
 				</ul>
 			</div>
-			<shopcart :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
 		</div>
 	</div>
 </template>
@@ -76,7 +75,6 @@
 	import star from 'components/star/star';
 	import division from 'components/division/division';
 	import icon from 'components/icon/icon';
-	import shopcart from 'components/shopcart/shopcart';
 	import BScroll from 'better-scroll';
 	import {saveToLocal, loadFromLocal} from 'common/js/store';
 
@@ -147,8 +145,7 @@
 		components: {
 			'star': star,
 			'division': division,
-			'icon': icon,
-			'shopcart': shopcart
+			'icon': icon
 		}
 	};
 </script>
